@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.testng.base.TestListener" />
+	</listeners>	
+	<test name="Demo Tests">
+		<classes>
+			<class name="net.docprep.commonfunctions.GetTestCases" >
+				<methods>
+					<include name ="getCases"/>				
+				</methods>
+			</class>			
+			<class name="net.docprep.commonfunctions.TestNgMethods" />
+			<class name ="com.testng.test.SignInPageTest">
+				<methods>
+					<include name="beforeMethod"/>
+				</methods>
+			</class>			
+		</classes>
+	</test>
+</suite>

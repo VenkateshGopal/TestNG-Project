@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="DocPrep Automation">
+  <test name="Regression">
+    <classes>
+      <class name="com.testng.test.SignInPageTest">
+        <methods>
+          <include name="CDAF_Penfabric_Collection_DA"/>
+          <include name="CDAF_Penfabric_Collection_DP"/>
+          <include name="CDAF_Penfabric_LC_PymtToUSUnderColl"/>
+          <include name="CDAF_Penfabric_LC_NLC"/>
+          <include name="CDAF_Penfabric_OA_PymtToUSAfterColl"/>
+        </methods>
+      </class> <!-- com.testng.test.SignInPageTest -->
+      <class name=""/>
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- DocPrep Automation -->
